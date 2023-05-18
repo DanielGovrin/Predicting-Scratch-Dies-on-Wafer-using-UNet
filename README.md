@@ -1,6 +1,6 @@
 # Predicting-Scratch-Dies-on-Wafer-using-UNet
 This repository contains my implementation of a UNet-based model for predicting whether a given die on a wafer map belongs to a scratch or not. The model is trained using labeled data that includes information about individual dies from multiple wafers.
-Key Features:
+# Key Features:
 
 Loads and preprocesses the wafer data from a provided zip file.
 Provides an exploratory data analysis of the dataset, including the number of unique wafers and absent values.
