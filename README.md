@@ -1,11 +1,22 @@
-# Predicting-Scratch-Dies-on-Wafer-using-UNet
-This repository contains my implementation of a UNet-based model for predicting whether a given die on a wafer map belongs to a scratch or not. The model is trained using labeled data that includes information about individual dies from multiple wafers.
+# Description:
+
+This repository contains the code and implementation of a scratch prediction model using the UNet architecture. The model is designed to accurately predict whether a given die on a wafer belongs to a scratch or not. It leverages wafer maps, including information such as the wafer name, die coordinates, and indicators of good or scratch dies.
+
 # Key Features:
 
-Loads and preprocesses the wafer data from a provided zip file.
-Provides an exploratory data analysis of the dataset, including the number of unique wafers and absent values.
-Generates scratch banks for wafer images by grouping and analyzing the scratch dies.
-Prepares test wafer images by converting die information into image arrays.
-Implements a UNet-based model for scratch prediction, using a simple UNet architecture with convolutional and pooling layers.
-Trains the model using the prepared dataset and evaluates it using dice loss and dice coefficient metrics.
-Facilitates the prediction of scratch dies on test wafer images.
+Utilizes the UNet architecture for effective image segmentation and scratch prediction.
+Trained on a labeled dataset consisting of wafer maps and associated scratch annotations.
+Provides a reliable prediction of whether a die belongs to a scratch or not.
+Handles the identification of both good and scratch dies on the wafer.
+
+# The code performs the following steps:
+
+Loads the data from a zip file containing the wafer and test data.
+Preprocesses the wafer data, including grouping by wafer name, checking for absent values, and visualizing scratch die counts.
+Constructs a scratch bank dictionary to store scratch banks associated with each wafer size.
+Preprocesses the test data, setting corresponding pixels to white for bad dies.
+Splits the dataset into training and validation sets using a specified test size.
+Implements the UNet model architecture using TensorFlow and Keras.
+Compiles the model with the Adam optimizer and a custom dice loss function.
+Trains the model on the training data for a specified number of epochs.
+The scratch prediction model presented in this repository is applicable in the semiconductor industry, aiding in the early detection and prevention of manufacturing defects. By accurately identifying scratch dies, it contributes to improved yield and quality control.
