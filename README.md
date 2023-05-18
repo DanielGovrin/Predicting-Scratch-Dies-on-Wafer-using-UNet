@@ -12,6 +12,7 @@ Handles the identification of both good and scratch dies on the wafer.
 # The code performs the following steps:
 
 Loads the data from a zip file containing the wafer and test data.
+
 Preprocesses the wafer data, including grouping by wafer name, checking for absent values, and visualizing scratch die counts.
 Constructs a scratch bank dictionary to store scratch banks associated with each wafer size.
 Preprocesses the test data, setting corresponding pixels to white for bad dies.
