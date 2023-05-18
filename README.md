@@ -14,10 +14,10 @@ Handles the identification of both good and scratch dies on the wafer.
 * Loads the data from a zip file containing the wafer and test data.
 
 * Preprocesses the wafer data, including grouping by wafer name, checking for absent values, and visualizing scratch die counts.
-Constructs a scratch bank dictionary to store scratch banks associated with each wafer size.
-Preprocesses the test data, setting corresponding pixels to white for bad dies.
-Splits the dataset into training and validation sets using a specified test size.
-Implements the UNet model architecture using TensorFlow and Keras.
-Compiles the model with the Adam optimizer and a custom dice loss function.
-Trains the model on the training data for a specified number of epochs.
-The scratch prediction model presented in this repository is applicable in the semiconductor industry, aiding in the early detection and prevention of manufacturing defects. By accurately identifying scratch dies, it contributes to improved yield and quality control.
+* Constructs a scratch bank dictionary to store scratch banks associated with each wafer size.
+* Preprocesses the test data, setting corresponding pixels to white for bad dies.
+* Splits the dataset into training and validation sets using a specified test size.
+* Implements the UNet model architecture using TensorFlow and Keras.
+* Compiles the model with the Adam optimizer and a custom dice loss function.
+* Trains the model on the training data for a specified number of epochs.
+* The scratch prediction model presented in this repository is applicable in the semiconductor industry, aiding in the early detection and prevention of manufacturing defects. By accurately identifying scratch dies, it contributes to improved yield and quality control.
